@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        div{
+            margin: 4px;
+        }
+        .container{
+            display: grid;
+            height: 500px;
+            width: 500px;
+            grid-template-columns: auto auto auto;
+            background-color: white;
+        }
+        .c1{
+            display: grid;
+            grid-template-rows: auto auto auto;
+        }
+        .c1 div, .c2 div, .c3 div {
+            border: solid;
+        }
+        .c2,.c3{
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+        }
+        .c3r2{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .c3r2r1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=" c1">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+        <div class="c2">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+        <div class="c3">
+            <div>
+
+            </div>
+            <div class="c3r2">
+                <div class="c3r2r1">
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
