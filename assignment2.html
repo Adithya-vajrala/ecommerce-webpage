@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        .toggle-input {
+        display: none;
+        }
+
+        .menu-content {
+        display: none;
+        background: #333;
+        color: white;
+        }
+        .toggle-input:checked ~ .menu-content {
+        display: block;
+        }
+
+        .menu-btn {
+        cursor: pointer;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        display: inline-block;
+        }   
+    </style>
+</head>
+<body>
+<input type="checkbox" id="menu-toggle" class="toggle-input">
+<label for="menu-toggle" class="menu-btn">☰ Menu</label>
+
+<!-- The Menu Content -->
+<nav class="menu-content">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>   
+</body>
+</html>
